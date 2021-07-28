@@ -18,11 +18,11 @@
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
     <div class="container">
       <a href="index.html" class="navbar-brand">Blogen</a>
-      <button class="navbar-toggler" type="collapse" data-target="#navbarCollapse">
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav w-100 align-items-center">
+        <ul class="navbar-nav">
           <li class="nav-item px-2">
             <a href="index.html" class="nav-link active">Dashboard</a>
           </li>
@@ -35,7 +35,9 @@
           <li class="nav-item px-2">
             <a href="users.html" class="nav-link">Users</a>
           </li>
-          <li class="nav-item dropdown px-2 ml-auto">
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown px-2">
             <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">
               <i class="fas fa-user"></i>
               Welcome Brad
@@ -148,7 +150,7 @@
   <section id="posts">
     <div class="container">
       <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-9 mb-3">
           <div class="card">
             <h4 class="card-header">Latest Posts</h4>
             <table class="table table-striped">
