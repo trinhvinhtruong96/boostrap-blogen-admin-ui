@@ -47,7 +47,7 @@
                 <i class="fas fa-user-circle"></i>
                 Profile
               </a>
-              <a href="" class="dropdown-item">
+              <a href="./setting.html" class="dropdown-item">
                 <i class="fas fa-cog"></i>
                 Settings
               </a>
@@ -100,59 +100,16 @@
     </div>
   </section>
 
-  <!-- ADD POST MODAL -->
-  <div class="modal fade" id="addPostModal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header bg-primary text-white">
-          <h5 class="modal-title">Add Post</h5>
-          <button class="close" data-dismiss="modal">
-            <span>&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="title">Title</label>
-              <input id="title" type="text" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="category">Category</label>
-              <select id="category" type="text" class="form-control">
-                <option>Web Development</option>
-                <option>Tech Gadgets</option>
-                <option>Business</option>
-                <option>Health & Wellness</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Upload Image</label>
-              <div class="custom-file">
-                <input type="file" id="image" class="custom-file-input">
-                <label for="custom-file-input" class="custom-file-label">Choose File</label>
-                <small class="form-text text-muted">Max Size 3mb</small>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="body">Body</label>
-              <textarea name="editor1" class="form-control"></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-primary">Save Changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- POSTS -->
   <section id="posts">
     <div class="container">
       <div class="row">
         <div class="col-md-9 mb-3">
           <div class="card">
-            <h4 class="card-header">Latest Posts</h4>
+            <div class="card-header">
+              <h4>Latest Posts</h4>
+            </div>
+
             <table class="table table-striped">
               <thead class="thead-dark">
                 <tr>
@@ -170,10 +127,9 @@
                   <td>Web Development</td>
                   <td> May 10 2018</td>
                   <td>
-                    <button class="btn btn-secondary">
-                      <i class="fas fa-angle-double-right"></i>
-                      Detail
-                    </button>
+                    <a href="details.html" class="btn btn-secondary">
+                      <i class="fas fa-angle-double-right"></i> Details
+                    </a>
                   </td>
                 </tr>
                 <tr>
@@ -182,10 +138,9 @@
                   <td>Tech Gadgets</td>
                   <td> May 11 2018</td>
                   <td>
-                    <button class="btn btn-secondary">
-                      <i class="fas fa-angle-double-right"></i>
-                      Detail
-                    </button>
+                    <a href="details.html" class="btn btn-secondary">
+                      <i class="fas fa-angle-double-right"></i> Details
+                    </a>
                   </td>
                 </tr>
                 <tr>
@@ -194,10 +149,9 @@
                   <td>Web Development</td>
                   <td> May 13 2018</td>
                   <td>
-                    <button class="btn btn-secondary">
-                      <i class="fas fa-angle-double-right"></i>
-                      Detail
-                    </button>
+                    <a href="details.html" class="btn btn-secondary">
+                      <i class="fas fa-angle-double-right"></i> Details
+                    </a>
                   </td>
                 </tr>
                 <tr>
@@ -206,10 +160,9 @@
                   <td>Web Development</td>
                   <td> May 10 2018</td>
                   <td>
-                    <button class="btn btn-secondary">
-                      <i class="fas fa-angle-double-right"></i>
-                      Detail
-                    </button>
+                    <a href="details.html" class="btn btn-secondary">
+                      <i class="fas fa-angle-double-right"></i> Details
+                    </a>
                   </td>
                 </tr>
                 <tr>
@@ -218,10 +171,9 @@
                   <td>Web Development</td>
                   <td> May 10 2018</td>
                   <td>
-                    <button class="btn btn-secondary">
-                      <i class="fas fa-angle-double-right"></i>
-                      Detail
-                    </button>
+                    <a href="details.html" class="btn btn-secondary">
+                      <i class="fas fa-angle-double-right"></i> Details
+                    </a>
                   </td>
                 </tr>
                 <tr>
@@ -230,10 +182,9 @@
                   <td>Web Development</td>
                   <td> May 10 2018</td>
                   <td>
-                    <button class="btn btn-secondary">
-                      <i class="fas fa-angle-double-right"></i>
-                      Detail
-                    </button>
+                    <a href="details.html" class="btn btn-secondary">
+                      <i class="fas fa-angle-double-right"></i> Details
+                    </a>
                   </td>
                 </tr>
               </tbody>
@@ -294,6 +245,52 @@
       </div>
     </div>
   </footer>
+
+  <!-- ADD POST MODAL -->
+  <div class="modal fade" id="addPostModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Add Post</h5>
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input id="title" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="category">Category</label>
+              <select id="category" type="text" class="form-control">
+                <option>Web Development</option>
+                <option>Tech Gadgets</option>
+                <option>Business</option>
+                <option>Health & Wellness</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Upload Image</label>
+              <div class="custom-file">
+                <input type="file" id="image" class="custom-file-input">
+                <label for="custom-file-input" class="custom-file-label">Choose File</label>
+                <small class="form-text text-muted">Max Size 3mb</small>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="body">Body</label>
+              <textarea name="editor1" class="form-control"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary">Save Changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ADD CATEGORY MODAL -->
   <div class="modal fade" id="addCategoryModal">
